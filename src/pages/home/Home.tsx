@@ -3,7 +3,7 @@ function Home() {
         <div className="
             flex
             justify-center
-            bg-indigo-900
+            bg-gradient-to-r from-[#900551] to-[#F30086]
         ">
             <div className="
                 container
@@ -51,7 +51,7 @@ function Home() {
  
                 <div className="flex justify-center">
                     <img
-                        src="https://i.imgur.com/VpwApCU.png"
+                        src="https://ik.imagekit.io/yijg14v4w/Blog_pessoal_React/Sharing%20articles-amico.png?updatedAt=1739790988460"
                         alt="Imagem da Página Home"
                         className="w-2/3"
                     />
