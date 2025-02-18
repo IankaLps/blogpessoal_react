@@ -48,20 +48,18 @@ function Cadastro() {
       setIsLoading(true);
 
       try {
-        await cadastrarUsuario(`/usuarios/cadastrar`, usuario, setUsuario);
-        alert("Usuário cadastrado com sucesso!");
-      } catch (error) {
-        alert("Erro ao cadastrar o usuário!");
-      }
-    } else {
-      alert(
-        "Dados do usuário inconsistentes! Verifique as informações do cadastro."
-      );
-      setUsuario({ ...usuario, senha: "" });
-      setConfirmaSenha("");
-    }
+        await cadastrarUsuario("/usuarios/cadastrar", usuario, setUsuario)
+				alert("Usuário Cadastrado com sucesso!")
+			} catch (error) {
+				alert("Erro ao cadastrar o Usuário!")
+			}
+		} else {
+			alert("Dados do usuário inconsistentes! Verifique as informações e tente novamente.")
+			setUsuario({ ...usuario, senha: "" })
+			setConfirmaSenha("")
+		}
 
-    setIsLoading(false);
+		setIsLoading(false)
   }
 
   console.log(JSON.stringify(usuario));
@@ -71,10 +69,13 @@ function Cadastro() {
     <>
       <div
         className="grid grid-cols-1 lg:grid-cols-2 h-screen 
-            place-items-center font-bold"
+                  place-items-center font-bold"
       >
         <div className="fundoCadastro hidden lg:block"></div>
-        <form className="flex justify-center items-center flex-col w-2/3 gap-3">
+        <form
+					className="flex justify-center items-center flex-col w-2/3 gap-3"
+					onSubmit={cadastrarNovoUsuario}
+				>
           <h2 className="text-[#900551] text-5xl">Cadastrar</h2>
 
           <div className="flex flex-col w-full">
@@ -88,9 +89,7 @@ function Cadastro() {
               placeholder="Nome"
               className="border-2 border-[#900551] rounded p-2"
               value={usuario.nome}
-              onChange={(e: ChangeEvent<HTMLInputElement>) =>
-                atualizarEstado(e)
-              }
+              onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>
 
@@ -105,9 +104,7 @@ function Cadastro() {
               placeholder="Usuario"
               className="border-2 border-[#900551] rounded p-2"
               value={usuario.usuario}
-              onChange={(e: ChangeEvent<HTMLInputElement>) =>
-                atualizarEstado(e)
-              }
+              onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>
 
@@ -122,9 +119,7 @@ function Cadastro() {
               placeholder="Foto"
               className="border-2 border-[#900551] rounded p-2"
               value={usuario.foto}
-              onChange={(e: ChangeEvent<HTMLInputElement>) =>
-                atualizarEstado(e)
-              }
+              onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>
 
@@ -139,9 +134,7 @@ function Cadastro() {
               placeholder="Senha"
               className="border-2 border-[#900551] rounded p-2"
               value={usuario.senha}
-              onChange={(e: ChangeEvent<HTMLInputElement>) =>
-                atualizarEstado(e)
-              }
+              onChange={(e: ChangeEvent<HTMLInputElement>) =>atualizarEstado(e)}
             />
           </div>
 
@@ -156,17 +149,15 @@ function Cadastro() {
               placeholder="Confirmar Senha"
               className="border-2 border-[#900551] rounded p-2"
               value={confirmaSenha}
-              onChange={(e: ChangeEvent<HTMLInputElement>) =>
-                handleConfirmarSenha(e)
-              }
+              onChange={(e: ChangeEvent<HTMLInputElement>) => handleConfirmarSenha(e)}
             />
           </div>
 
           <div className="flex justify-around w-full gap-8">
             <button
               type='reset'
-              className="rounded text-white bg-[#f31d2f] [#ed4c57] #ff97ca
-                  hover:bg-[#53181b]  w-1/2 py-2"
+              className="rounded text-white bg-[#ff555d] [#ed4c57] #ff97ca
+                      hover:bg-[#f31d2f] w-1/2 py-2"
               onClick={retornar}
             >
               Cancelar
@@ -174,8 +165,8 @@ function Cadastro() {
 
             <button
               type="submit"
-              className="rounded text-white bg-[#900551]
-                          hover:bg-[#fc2199] w-1/2 py-2
+              className="rounded text-white bg-[#fc2199]
+                          hover:bg-[#900551] w-1/2 py-2
                           flex justify-center"
             >
               {isLoading ? (
