@@ -11,7 +11,7 @@ function CardTemas({ tema }: CardTemasProps) {
             <header className='py-2 px-6 bg-[#900551] text-white font-bold text-2xl'>
                 Tema
             </header>
-            <p className='p-8 text-3xl bg-[#fff5fb] h-full text-[#900551]'>{tema.descricao}</p>
+            <p className='p-8 text-3xl bg-[#fff5fb] h-full'>{tema.descricao}</p>
             
             <div className="flex">
                 <Link to={`/editartema/${tema.id}`}
