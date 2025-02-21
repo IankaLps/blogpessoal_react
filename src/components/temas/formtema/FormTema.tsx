@@ -113,8 +113,8 @@ function FormTema() {
                 </div>
 
                 <button
-                    className="rounded text-slate-100 bg-[#900551]
-                            hover:bg-[#fc2199] w-1/2 py-2 mx-auto flex justify-center"
+                    className="rounded text-slate-100 bg-[#fc2199]
+                            hover:bg-[#900551] w-1/2 py-2 mx-auto flex justify-center"
                     type="submit">
                     {isLoading ? (
                                 <RotatingLines

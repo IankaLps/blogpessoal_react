@@ -34,10 +34,10 @@ export function AuthProvider({ children }: AuthProviderProps){
         try{
 
             await login('/usuarios/logar', usuarioLogin, setUsuario)
-            alert('O Usuário foi ')
+            alert('O usuário foi logado!')
 
         }catch(erro){
-            alert('Os dados do Usuário estão inconsistentes!')
+            alert('Os dados do usuário estão inconsistentes!')
         }
 
         setIsLoading(false)

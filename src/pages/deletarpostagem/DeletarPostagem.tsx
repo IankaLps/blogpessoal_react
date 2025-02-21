@@ -33,7 +33,7 @@ function DeletarPostagem() {
 
     useEffect(() => {
         if (token === '') {
-            alert('Você precisa estar logado')
+            alert('Você precisa estar logado!')
             navigate('/')
         }
     }, [token])
@@ -54,13 +54,13 @@ function DeletarPostagem() {
                 }
             })
 
-            alert('Postagem apagada com sucesso')
+            alert('Postagem apagada com sucesso!')
 
         } catch (error: any) {
             if (error.toString().includes('403')) {
                 handleLogout()
             }else {
-                alert('Erro ao deletar a postagem.')
+                alert('Erro ao deletar a postagem!')
             }
         }
 
@@ -97,7 +97,7 @@ function DeletarPostagem() {
                     </button>
                     <button 
                         className='w-full text-slate-100 bg-[#ff555d] 
-                        hover:bg-[#f31d2f] flex items-center justify-center'
+                        hover:bg-[#f31d1f] flex items-center justify-center'
                         onClick={deletarPostagem}>
                         
                         {isLoading ?

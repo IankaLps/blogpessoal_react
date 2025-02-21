@@ -41,7 +41,7 @@ function CardPostagem({ postagem }: CardPostagensProps) {
                 </Link>
                 
                 <Link to={`/deletarpostagem/${postagem.id}`}
-                    className='text-white bg-[#ff555d] hover:bg-[#f31d2f] w-full 
+                    className='text-white bg-[#ff555d] hover:bg-[#f31d1f] w-full 
                     flex items-center justify-center'>
                     <button>Deletar</button>
                     </Link>

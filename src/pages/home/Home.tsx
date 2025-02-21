@@ -11,7 +11,7 @@ function Home() {
                         Seja Bem-Vindo(a)!
                     </h2>
                     <p className="text-xl">
-                        Expresse aqui seus pensamentos e opiniões
+                        💬 Expresse aqui seus pensamentos e opiniões
                     </p>
 
                     <div className="flex justify-around gap-4">

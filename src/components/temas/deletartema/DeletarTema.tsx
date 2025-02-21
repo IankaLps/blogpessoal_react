@@ -79,7 +79,7 @@ function DeletarTema() {
                 <p className="p-8 text-3xl bg-[#fff5fb] h-full">{tema.descricao}</p>
                 <div className="flex">
                     <button 
-                        className="text-slate-100 bg-[#ff555d] hover:bg-[#f31d2f] w-full py-2"
+                        className="text-slate-100 bg-[#ff555d] hover:bg-[#f31d1f] w-full py-2"
                         onClick={retornar}
                     >
                         Não

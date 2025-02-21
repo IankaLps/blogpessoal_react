@@ -157,7 +157,7 @@ function Cadastro() {
             <button
               type='reset'
               className="rounded text-white bg-[#ff555d] [#ed4c57] #ff97ca
-                      hover:bg-[#f31d2f] w-1/2 py-2"
+                      hover:bg-[#f31d1f] w-1/2 py-2"
               onClick={retornar}
             >
               Cancelar

@@ -12,7 +12,7 @@ function Footer() {
                     <p className='text-xl font-bold'>
                             Blog Pessoal Ianka Lps | Copyright: {data}
                         </p>
-                    <p className='text-lg'>Acesse minhas redes sociais</p>
+                    <p className='text-lg'>Acesse minhas redes sociais!</p>
                     <div className='flex gap-2'>
 
                     <a href="https://www.linkedin.com/in/iankalps/" target="_blank">

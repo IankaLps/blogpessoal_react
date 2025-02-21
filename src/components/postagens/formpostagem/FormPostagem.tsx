@@ -59,7 +59,7 @@ function FormPostagem() {
 
     useEffect(() => {
         if (token === '') {
-            alert('Você precisa estar logado');
+            alert('Você precisa estar logado!');
             navigate('/');
         }
     }, [token])
@@ -104,13 +104,13 @@ function FormPostagem() {
                     },
                 });
 
-                alert('Postagem atualizada com sucesso')
+                alert('Postagem atualizada com sucesso!')
 
             } catch (error: any) {
                 if (error.toString().includes('403')) {
                     handleLogout()
                 } else {
-                    alert('Erro ao atualizar a Postagem')
+                    alert('Erro ao atualizar a Postagem!')
                 }
             }
 
@@ -122,13 +122,13 @@ function FormPostagem() {
                     },
                 })
 
-                alert('Postagem cadastrada com sucesso');
+                alert('Postagem cadastrada com sucesso!');
 
             } catch (error: any) {
                 if (error.toString().includes('403')) {
                     handleLogout()
                 } else {
-                    alert('Erro ao cadastrar a Postagem');
+                    alert('Erro ao cadastrar a Postagem!');
                 }
             }
         }
