@@ -1,50 +1,50 @@
-# React + TypeScript + Vite
+# Blog Pessoal React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Blog Pessoal](https://ik.imagekit.io/yijg14v4w/Blog_pessoal_React/c3ptw9cj.png?updatedAt=1740436298771)
 
-Currently, two official plugins are available:
+🚀 Bem-vindo ao meu Blog Pessoal! Este projeto foi desenvolvido para permitir a criação, edição e exclusão de postagens e temas, oferecendo uma experiência dinâmica e interativa para os usuários.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Link do Projeto
+[Blog Pessoal - Acesse Aqui](https://blogpessoal-react-tan.vercel.app/)
 
-## Expanding the ESLint configuration
+## 📌 Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 🖥️ Frontend
+- **React + TypeScript**
+- **Vite** (para otimização do build e desenvolvimento rápido)
+- **React Router** (para navegação)
+- **Tailwind CSS** (para estilização responsiva)
+- **Axios** (para consumo de API)
+- **React Toastify** (para notificações)
 
-- Configure the top-level `parserOptions` property like this:
+## 🔥 Funcionalidades Implementadas
+- Cadastro e login de usuários
+- CRUD completo para postagens e temas
+- Persistência de dados com consumo de API via Axios
+- Interface moderna e responsiva
+- Feedbacks visuais para melhorar a experiência do usuário
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🚀 Como Executar o Projeto
+
+### 📂 Clonar o repositório:
+```bash
+git clone https://github.com/IankaLps/blogpessoal_react.git
+cd blogpessoal_react
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### 📦 Instalar dependências:
+```bash
+yarn install
 ```
+
+### ▶️ Executar o projeto:
+```bash
+yarn dev
+```
+
+O projeto será iniciado em modo de desenvolvimento e poderá ser acessado no navegador pelo endereço indicado no terminal.
+
+## 📌 Repositório
+[GitHub - Blog Pessoal React](https://github.com/IankaLps/blogpessoal_react)
+
+💡 O aprendizado não para! Sempre buscando melhorar e adicionar novas funcionalidades. Feedbacks são bem-vindos! 🚀
