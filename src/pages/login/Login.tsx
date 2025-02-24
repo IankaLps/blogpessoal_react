@@ -48,13 +48,13 @@ function Login() {
                     <h2 className="text-[#900551]  text-5xl ">Entrar</h2>
                     <div className="flex flex-col w-full">
                         <label htmlFor="usuario" className="text-[#900551]">
-                            Usuário
+                            E-mail
                         </label>
                         <input
                             type="text"
                             id="usuario"
                             name="usuario"
-                            placeholder="Usuario"
+                            placeholder="E-mail"
                             className="border-2 border-[#900551] rounded p-2"
                             value={usuarioLogin.usuario}
                             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
